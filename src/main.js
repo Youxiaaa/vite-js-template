@@ -7,9 +7,6 @@ const app = createApp(App)
 
 import { AOS } from './plugins/aos'
 
-import api from './api/apiInstance'
-app.provide('$api', api)
-
 // 引入 Pinia 以及封裝後的 stores
 import { createPinia } from 'pinia'
 const pinia = createPinia()

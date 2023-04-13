@@ -1,8 +1,6 @@
 
 import { httpRequestGet } from '../utils/AxiosInstance'
 
-const api = {
+export const FETCH_ROOM = {
   getRoomList: ({ ...data }) => httpRequestGet('/api/room/room/getRoomList', { params: { ...data } })
 }
-
-export default api
